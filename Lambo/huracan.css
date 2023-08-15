@@ -1,0 +1,99 @@
+/* Huracan Page Styles */
+.revuelto-details {
+  
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ /* huracan.css */
+ .huracan-text {
+    text-align: left;
+    color: #fff;
+    padding: 50px;
+  }
+  
+
+.huracan-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff; /* Text color for white contrast */
+}
+  
+  .huracan-text h1 {
+    margin: 0;
+    font-size: 200px;
+  }
+  
+  .huracan-text p {
+    margin: 5px 0;
+    font-size: 180px;
+  }
+ 
+ 
+ 
+ 
+ .huracan h2,
+ .huracan p {
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+ }
+ 
+ 
+
+  .huracan-header p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .huracan-header img {
+    max-width: 100%;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  
+
+
+.huracan-section {
+    max-width: 90%; /* Adjust the width as needed */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #333; /* Dark grey background color */
+  }
+  
+  .huracan-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #fff; /* Text color for white contrast */
+  }
+  
+  .huracan-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff; /* Text color for white contrast */
+  }
+  
+  .huracan-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 0 auto; /* Center-align the image */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .huracan-section {
+      padding: 15px;
+    }
+  }
+  

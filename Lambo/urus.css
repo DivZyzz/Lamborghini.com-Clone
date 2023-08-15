@@ -1,0 +1,95 @@
+/* Urus Page Styles */
+.urus-details {
+  
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ /* urus.css */
+ .urus-text {
+    text-align: left;
+    color: #fff;
+    padding: 50px;
+  }
+  
+  .urus-text h1 {
+    margin: 0;
+    font-size: 150px;
+  }
+  
+  .urus-text p {
+    margin: 5px 0;
+    font-size: 180px;
+  }
+ 
+ @media screen and (max-width: 768px) {
+    .urus-text {
+       width: 100%;
+    }
+ }
+ 
+ 
+ .urus-header h2,
+ .urus-header p {
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+ }
+ 
+ 
+
+  .urus-header p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .urus-header img {
+    max-width: 100%;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  
+  
+.urus-section {
+    max-width: 90%; /* Adjust the width as needed */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #333; /* Dark grey background color */
+  }
+  
+  .urus-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #fff; /* Text color for white contrast */
+  }
+  
+  .urus-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff; /* Text color for white contrast */
+  }
+  
+  .urus-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 0 auto; /* Center-align the image */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .urus-section {
+      padding: 15px;
+    }
+  }
+  
