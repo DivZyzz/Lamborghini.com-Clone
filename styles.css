@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333; /* Dark grey background color for the whole page */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out; /* Apply the fadeIn animation */
+  }
+  
+.nav-links a {
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ffd700; /* Change to your desired hover color */
+  border-bottom: 2px solid #ffd700; /* Add a bottom border on hover */
+}
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: #fff; /* You can adjust this color if needed */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-links,
+  .right-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left-links li,
+  .right-links li {
+    margin-right: 20px;
+  }
+  
+  .center-gap {
+    flex-grow: 1;
+  }
+  
+  .search-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  
+  .fa-search,
+  .fa-bars {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .fa-bars {
+    transform: rotate(90deg);
+  }
+  
+  
+/* Logo Image */
+.logo-img {
+  max-width: 100px; /* Set the maximum width for your logo */
+  height: auto; /* To maintain the aspect ratio of the image */
+  display: block; /* Ensure the image takes the full width available */
+  margin: 10px; /* Adjust the margin as needed */
+}
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/news/2023/08_10_us_market/us_market_cover.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 250px 0;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+
+/* Models Section */
+.models {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Display the model cards in a column */
+  align-items: center; /* Center-align the model cards horizontally */
+  width: 100%; /* Set the section width to full screen */
+}
+/* Add this CSS to enhance the model sections */
+.model-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.model-card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover */
+}
+
+.models {
+  display: flex;
+  flex-wrap: wrap; /* Allow the model cards to wrap to the next line */
+  justify-content: center; /* Center-align the cards horizontally */
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.models h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.model-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px 0; /* Add margin at the top and bottom */
+  text-align: center;
+  width: 80%; /* Set the width of the model cards */
+  max-width: 6500px; /* Limit the maximum width of the model cards */
+}
+
+.model-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.model-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.model-card p {
+  color: #777;
+}
+
+.slideshow-img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slideshow-img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 200px;
+}
+
+.dropdown-menu a {
+  padding: 5px 0; /* Adjust the padding to increase space between model names */
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px; /* Add spacing between links */
+}
+
+
+.footer-hero {
+  background-image: url('https://www.sertackemiksiz.com/images/2021/05/23/lamborghini-elektriklenme-planlarini-acikliyor_large.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding: 250px 0;
+  color: #fff;
+}
+
+.footer-hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-left: 25px; /* Adjust this value as needed */
+}
+
+.footer-hero h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.footer-hero p {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+  
