@@ -316,9 +316,25 @@ footer {
   padding: 10px 0;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .model-section {
-      padding: 15px;
-  }
-}  
+/* Media query for screens up to 768px (typical mobile width) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: stretch; /* Stretch navigation items to full width */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center-align links horizontally */
+        margin-top: 10px; /* Add some space at the top */
+    }
+    
+    .nav-links li {
+        display: block; /* Display links as blocks */
+        margin: 10px 0; /* Add space above and below each link */
+        text-align: center; /* Center-align text */
+    }
+
+    /* Add more adjustments for other sections as needed */
+}
