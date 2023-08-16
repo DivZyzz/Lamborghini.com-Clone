@@ -1,0 +1,135 @@
+/* Beyond Section */
+.beyond-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+ }
+ 
+ .hero {
+    padding: 100px 0; 
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/f1a1a970783785.5bae9385d05dd.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 250px 0;
+    color: #fff;
+ }
+ 
+ .hero h2 {
+    font-size: 50px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    padding: 0 50px; /* Add padding to the left and right */
+}
+
+.hero h1 {
+    font-size: 150px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    padding: 0 50px; /* Add padding to the left and right */
+}
+ .beyond-overview {
+    display: flex;
+    align-items: center;
+    padding-top: 50px; /* Adjust the top padding as needed */
+    padding-bottom: 50px; /* Adjust the bottom padding as needed */
+}
+
+
+
+.beyond-overview-image {
+    max-width: 50%; /* Adjust the width of the image */
+    padding: 20px; /* Add your desired padding here */
+}
+
+.beyond-overview-image img {
+    width: 100%;
+    height: auto;
+}
+
+.beyond-overview-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 25px; /* Adjust the font size to your preference */
+}
+
+
+
+
+.beyond-content {
+    padding: 50px; /* Adjust padding as needed */
+}
+
+.beyond-overview {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners for the floating box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.158); /* Shadow for the floating box */
+}
+
+.beyond-overview-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.beyond-overview-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.beyond-overview-text {
+    flex: 1;
+    padding-left: 20px; /* Adjust padding as needed */
+}
+
+.beyond-overview-text h3 {
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.beyond-overview-text p {
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+
+
+ .overview,
+ .top-employer,
+ .chasing-future,
+ .race-to-inspire {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .overview h3,
+ .top-employer h1,
+ .chasing-future h1,
+ .race-to-inspire h1 {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+ }
+ 
+ .overview p {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+ }
+ 
+ .overview img,
+ .top-employer img,
+ .chasing-future img,
+ .race-to-inspire img {
+    flex: 1;
+    max-width: 700px;
+    height: auto;
+ }
+ 
+ /* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .beyond-section {
+        padding: 15px;
+    }
+}

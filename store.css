@@ -1,0 +1,69 @@
+/* Store Hero */
+.store-hero {
+    background-image: url('https://0a411afb0c598242cc95-1df470064133d6bc5c471837468f475c.ssl.cf3.rackcdn.com/publish/wp-content/uploads/2019/07/Lamborghini-Pangbourne-exterior-July-2019-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: Left;
+    padding: 250px 0;
+    color: #fff;
+}
+
+.store-hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.store-hero h1 {
+    font-size: 200px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+/* Store Content */
+.store-content {
+    padding: 30px;
+}
+
+.store-collection,
+.store-shop-by-car,
+.store-flagship {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.store-collection img,
+.store-shop-by-car img,
+.store-flagship img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.store-collection-text,
+.store-shop-by-car-text,
+.store-flagship-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Store Categories */
+.store-categories {
+    /* Style your categories section */
+}
+
+/* Footer */
+footer {
+    /* Style your footer */
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .store-collection {
+        padding: 15px;
+    }
+}

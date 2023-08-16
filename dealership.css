@@ -1,0 +1,88 @@
+/* Add any common styles you need */
+.dealership-container {
+    display: flex;
+    align-items: center;
+}
+
+.country-names {
+    flex: 1;
+    background-color: rgb(253, 226, 105);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Add this line to add margin on the left */
+}
+
+
+.country-names ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.country-names li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.dealership-content {
+    display: flex;
+    padding: 20px 0;
+}
+
+.country-names {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.country h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.country ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.country li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 18px;
+}
+/* Add a class for the arrow heads without tails */
+.arrow-head {
+    display: inline-block;
+    transform: translateY(-90%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    margin-left: 5px;
+}
+
+
+.world-map {
+    flex: 3;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.world-map img {
+    max-width: 100%;
+    height: auto;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .dealership-section {
+        padding: 15px;
+    }
+}
