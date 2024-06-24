@@ -1,4 +1,4 @@
-# Lamborghini.com-Clone check it out here https://lambo-clone-by-dy.vercel.app/
+# Lamborghini.com-Clone check it out here https://divzyzz.github.io/Lamborghini.com-Clone/
 Created a responsive Lamborghini website with interactive navigation, model details, and engaging sections for an immersive user experience.
 
 **Project Report: Lamborghini Website Development**
